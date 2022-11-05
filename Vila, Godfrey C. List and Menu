@@ -95,7 +95,7 @@ while Loop:
         print("Your Current list is", rstlist)
 
     elif Option > 12:
-        print("Sorry Your Input is Invalis")
+        print("Sorry Your Input is Invalid")
     elif Option < 1:
         print("Sorry Your Input is Invalid")
     elif Option == 12:

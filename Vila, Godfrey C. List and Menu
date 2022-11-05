@@ -1,0 +1,103 @@
+print("********** PROGRAMMED BY:*************")
+print("********** GODFREY VILA **************")
+print("******** SECTION BSCOE 2-2 ***********")
+print("******* Sir Danilo Madrigalejos ******")
+print("")
+
+print("WELCOME TO GODFREY NUMBER LIST")
+Mylist = [14, 27, 19, 8, 2, 10, 4, 18, 9, 10]
+rstlist = [14, 27, 19, 8, 2, 10, 4, 18, 9, 10]
+print("\n My list are", Mylist
+
+Loop = True
+while Loop:
+    print("\n MENU")
+    print("1. -> Add Element")
+    print("2. -> Insert Element")
+    print("3. -> Modify Element")
+    print("4. -> Delete Element")
+    print("5. -> Arrange in Ascending")
+    print("6. -> Arrange in Descending")
+    print("7. -> Add the total number of list")
+    print("8. -> Pick an Element")
+    print("9. -> Count the number of element")
+    print("10. -> Find the Maximum and Minimum number ")
+    print("11. -> Reset the number from the orginal list")
+    print("12. -> Quit")
+
+    Option = int(input("PLease choose the number from (1-12): "))
+    if Option == 1:
+        print("")
+        Add = int(input("Enter the Element you want to add from the list: "))
+        Mylist.append(Add)
+        print("Your New list is: ", Mylist)
+
+    elif Option == 2:
+        print("")
+        Insert = int(input("Enter from what list you want to enter it: "))
+        Insert2 = int(input("Enter the element you want to insert: "))
+        Mylist.insert(Insert, Insert2)
+        print("Your New list is: ", Mylist)
+
+    elif Option == 3:
+        print("")
+        print("You pick Modify, meaning you can change the element form that list: ")
+        print("")
+        Modify = int(input("Enter from what list you want to change it:): "))
+        Modify1 = int(input("Enter the number you want to create: "))
+        Mylist[Modify] = Modify1
+        print("Your New list are: ", Mylist)
+
+    elif Option == 4:
+        print("")
+        print("This is the current list", Mylist)
+        Remove = int(input("Enter from the list you want to remove: "))
+        Mylist.remove(Remove)
+        print("You have successfully remove number", Remove, "from your list")
+        print("Your New list is", Mylist)
+
+    elif Option == 5:
+        print("")
+        Mylist.sort()
+        print("The ascending of this list are: ", Mylist)
+
+    elif Option == 6:
+        print("")
+        Mylist.sort()
+        Mylist.reverse()
+        print("The descending of this list are: ", Mylist)
+
+    elif Option == 7:
+        print("")
+        Total= sum(Mylist)
+        print("The total Number in the list is: ", Total)
+
+    elif Option == 8:
+        print("")
+        print("This is the current list: ", Mylist)
+        Pop = int(input("Enter from what list you want to pick: "))
+        New4 = Mylist.pop(Pop)
+        print("\nYou have pick ", New4, "from the list", "\nOur new list is: ", Mylist)
+
+    elif Option == 9:
+        print("")
+        print("The numer of element from the list is: ", len(Mylist))
+
+    elif Option == 10:
+        print("")
+        Max= max(Mylist)
+        Min= min(Mylist)
+        print("The Maximum number is: ", Max )
+        print("The Mimnimun number is ", Min)
+
+    elif Option == 11:
+        print("")
+        print("Your Current list is", rstlist)
+
+    elif Option > 12:
+        print("Sorry Your Input is Invalis")
+    elif Option < 1:
+        print("Sorry Your Input is Invalid")
+    elif Option == 12:
+        print("\nThank you for using my program\n GOODBYE!")
+        Loop = False
